@@ -1,1 +1,1 @@
-Proof of Concept for calling the AppModule retrieval function in PokerStars.
+Proof of Concept for calling the AppModule retrieval function in PokerStars..
