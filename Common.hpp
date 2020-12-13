@@ -85,6 +85,19 @@ namespace Green
 		}
 	}
 
+	inline bool is_bad_ptr(uint32_t* ptr)
+	{
+		__try
+		{
+			volatile auto result = *ptr;
+		}
+		__except (EXCEPTION_EXECUTE_HANDLER)
+		{
+			return true;
+		}
+		return false;
+	}
+
 	template<typename T> inline void WPM(uint64_t lpBaseAddress, T Val)
 	{
 		__try

@@ -17,7 +17,7 @@ void MainThread()
 
     while (g_Running)
     {
-        if (IsKeyPressed(VK_F1))
+        if (IsKeyPressed(0x50))
             g_Running = false;
 
         std::this_thread::sleep_for(3ms);

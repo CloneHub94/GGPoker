@@ -26,7 +26,7 @@ namespace Green
 
 		if (!AttachConsole(GetCurrentProcessId()))
 			AllocConsole();
-		SetConsoleTitle(L"");
+		SetConsoleTitle("");
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN);
 		SetConsoleCP(CP_UTF8);
 		SetConsoleOutputCP(CP_UTF8);
